@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lobster+Two&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+* {
+     font-family: 'Oswald', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none; 
+}
+
+footer {
+     background-image: linear-gradient( rgba(4, 0, 52, 0.998),  rgba(13, 0, 200, 0.998));
+     padding: 50px 0;
+}
+
+.cantainer-footer {
+     max-width: 1400px;
+     padding: 0 4%;
+     margin: auto;
+}
+
+.row-footer {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 20px;
+}
+
+.col-footer {
+     width: 25%;
+     padding: 0 15px;
+}
+
+.col-footer h4 {
+     font-size: 22px;
+     color: #FFF;
+     margin-bottom: 20px;
+     font-weight: 500;
+     position: relative;
+     text-transform: uppercase;
+}
+
+.col-footer li {
+     margin:  10px 0;
+}
+
+.col-footer li a {
+     font-size: 16px;
+     text-transform: capitalize;
+     color: #FFF;
+     font-weight: 300;
+     display: block;
+     transition: all 0.3s ease;
+}
+
+.col-footer li a:hover {
+     padding-left: 10px;
+     color: #afaeae;
+}
+
+.col-footer .medias-sociais {
+     margin-top: 30px;
+}
+
+.col-footer .medias-sociais a {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     margin: 0px 10px 10px 0;
+     border: 1px solid #FFF;
+     border-radius: 50%;
+     color: #FFF;
+     transition: all 0.5s ease;
+}
+
+.col-footer .medias-sociais a i {
+     font-size: 20px;
+}
+
+.col-footer .medias-sociais a:hover {
+     color: rgba(17, 0, 255, 0.998);
+     background-color: #FFF;
+}
+
+.col-footer .form-sub input {
+     width: 100%;
+     padding: 10px;
+     font-size: 15px;
+     outline: none;
+     border: 1px solid #FFF;
+     color: #FFF;
+     background-color: rgba(17, 0, 255, 0.998);
+}
+
+.col-footer .form-sub input::placeholder {
+     color: #FFF;
+}
+
+.col-footer .form-sub button {
+     width: 100%;
+     margin-top: 10px;
+     padding: 10px;
+     font-size: 17px;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     color: rgba(17, 0, 255, 0.998);
+     border-radius: ;
+     font-weight: bold;
+     background-color: #FFF;
+}
+
+/*** Responsivo ****/
+
+@media screen and (max-width:810px) {
+     .col-footer {
+          width: 50%;
+          margin-bottom: 30px;
+     }
+}
+
+@media screen and (max-width:600px) {
+     .col-footer {
+          width: 100%;
+          margin-bottom: 30px;
+     }
+}
